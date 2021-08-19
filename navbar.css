@@ -17,7 +17,12 @@
           box-sizing: border-box;
           scroll-behavior: smooth;
       }
-      
+      #date{
+          color: white;
+          font-size: 20px;
+          text-align: left;
+      }
+    
       html {
           font-family: 'Poppins', sans-serif;
           font-size: 10px;
