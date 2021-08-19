@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a7d1e099f6.js" crossorigin="anonymous"></script>
 
     <title>Document</title>
 </head>
 
 <body>
-    <header class="header-nav-bar">
+    <header id="pageHeader" class="header-nav-bar">
         <div class="container">
+
             <nav class="nav">
                 <!-- <img src="#" alt="Logo"> -->
                 <a href="#" class="logo1">LOGO</a>
@@ -21,19 +23,19 @@
                 <!-- menu normal -->
                 <ul class="nav-list">
                     <li>
-                        <a href="#" class="nav-link">Quem somos</a>
+                        <a href="#" class="nav-link">Menu Item</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Sustentabilidade</a>
+                        <a href="#" class="nav-link">Menu Item</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Novidades</a>
+                        <a href="#" class="nav-link">Menu Item</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Showroom</a>
+                        <a href="#" class="nav-link">Menu Item</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Contato</a>
+                        <a href="#" class="nav-link">Menu Item</a>
                     </li>
                 </ul>
                 <!-- search box -->
@@ -44,21 +46,18 @@
             </nav>
         </div>
     </header>
-    <video class="hero" autoplay muted loop src="virus.mp4"></video>
     <div class="container-titulos">
         <h1 class="h1-hero">Título 1</h1>
         <h2 class="h2-hero">Título 2</h2>
     </div>
+    <video class="hero" autoplay muted loop src="img/coronavirus.mov"></video>
+    <!-- VIDEO CREDITS:  http://www.robovideo.sk e-mail: info@robovideo.sk Thanks! -->
+
     </section>
     <main>
     </main>
-    <script>
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            const windowPosition = window.scrollY > 0;
-            header.classList.toggle('scrolling-active', windowPosition);
-        });
-    </script>
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>

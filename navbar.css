@@ -2,6 +2,11 @@
        :root {
           --cor-primaria: #5CBFD7;
           --cor-secundaria: #5c81d7;
+          --cor-azul-escuro: #13293D;
+          --cor-azul-safira: #006494;
+          --cor-azul-medio: #247BA0;
+          --cor-azul-claro: #1B98E0;
+          --cor-azure-branco: #E8f1f2;
       }
       
       *,
@@ -35,7 +40,7 @@
       
       .nav {
           width: 100%;
-          height: 7rem;
+          height: 10rem;
           display: flex;
           align-items: center;
           justify-content: space-around;
@@ -45,7 +50,7 @@
       
       .nav a {
           text-decoration: none;
-          color: #fff;
+          color: var(--cor-azure-branco);
           font-size: 1.6rem;
       }
       
@@ -67,9 +72,9 @@
           content: '';
           width: 100%;
           height: 2px;
-          background-color: var(--cor-primaria);
+          background-color: var(--cor-azul-medio);
           position: absolute;
-          top: 20px;
+          top: 23px;
           left: 0;
           transform: scaleX(0);
           transform-origin: left;
@@ -82,20 +87,20 @@
       
       #nav-cta {
           display: inline-block;
-          background-color: #fff;
-          color: #313131;
+          background-color: var(--cor-azure-branco);
+          color: black;
           padding: 1rem 1rem;
           border-radius: 2em;
           transition: background-color .5s ease;
       }
       
       #nav-cta:hover {
-          background-color: #d3d3d3;
+          background-color: var(--cor-azure-branco);
       }
       /*Aplica estilos scroll*/
       
       .scrolling-active {
-          background: linear-gradient(to left, #d6d6d4, #e8ebeb, #d6d6d4);
+          background: var(--cor-azure-branco);
           box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
       }
       
@@ -104,20 +109,20 @@
       }
       
       .scrolling-active .nav a {
-          color: #313131;
+          color: black;
       }
       
       .scrolling-active #nav-cta {
-          background-color: #313131;
-          color: #fff;
+          background-color: black;
+          color: var(--cor-azure-branco);
       }
       
       .scrolling-active #nav-cta:hover {
-          background-color: #151515;
+          background-color: black;
       }
       
       .scrolling-active .nav-link::after {
-          background-color: var(--cor-primaria);
+          background-color: var(--cor-azul-safira);
       }
       /*Fim da aplicação de estilos scroll*/
       /* conteúdo Hero (por convenção, "hero" se tornou uma parte da página que se deseja chamar atenção) */
@@ -144,32 +149,25 @@
       .container-titulos {
           position: absolute;
           display: flex;
-          height: 100vh;
+          height: 99vh;
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          top: 0;
           left: 15%;
       }
       
       .h1-hero {
           font-size: 8rem;
-          /* position: absolute; */
-          /* top: 60vh; */
           font-weight: 700;
       }
       
       .h1-hero,
       .h2-hero {
-          color: white;
-          /* line-height: 20vh; */
-          color: #fff;
+          color: var(--cor-azure-branco);
       }
       
       .h2-hero {
-          /* position: absolute; */
-          /* bottom: 10vh; */
-          color: white;
+          color: var(--cor-azure-branco);
           font-size: 5rem;
       }
       /* Fim do Hero */
@@ -190,13 +188,13 @@
           outline: none;
           border-radius: 25px;
           transition: all .5s ease-in-out;
-          background-color: var(--cor-primaria);
+          background-color: var(--cor-azul-medio);
           padding-right: 40px;
           color: rgb(0, 0, 0);
       }
       
       .input-search::placeholder {
-          color: var(--cor-primaria);
+          color: var(--cor-azure-branco);
           letter-spacing: 2px;
           font-weight: 100;
       }
@@ -212,7 +210,7 @@
           border-radius: 50%;
           position: absolute;
           right: 0px;
-          color: #ffffff;
+          color: var(--cor-azure-branco);
           background-color: transparent;
           pointer-events: painted;
       }
