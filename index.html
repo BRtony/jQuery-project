@@ -48,16 +48,31 @@
     <div class="container-titulos">
         <h1 class="h1-hero">Título 1</h1>
         <h2 class="h2-hero">Título 2</h2>
+        </br><br></br><br></br>
+        <p id="date"></p>
     </div>
+   
     </section>
     <main>
     </main>
-    <script>
-        window.addEventListener('scroll', function() {
+    <script id="ga-injection">
+        
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             const windowPosition = window.scrollY > 0;
             header.classList.toggle('scrolling-active', windowPosition);
         });
+        
+        var n =  new Date();
+        var y = n.getFullYear();
+        var m = n.getMonth() + 1;
+        var d = n.getDate();
+        var vhora = n.getHours();
+		var vminuto = n.getMinutes();
+		var vsegundo = n.getSeconds();
+        document.getElementById("date").innerHTML = d + "/" +  m + "/" + y + "   " + "Hora:"+" "+ vhora+":"+ vminuto + ":" + vsegundo + "(Horário de Brasília)";
+    
+
     </script>
 </body>
 
