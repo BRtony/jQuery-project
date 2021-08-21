@@ -1,8 +1,16 @@
 $(function() {
     window.addEventListener('scroll', function() { //requisito do projeto - scroll
         const header = $('#pageHeader');
+        const logo = $('#imglogo');
         const windowPosition = window.scrollY > 0;
         header.toggleClass('scrolling-active', windowPosition);
+        $(function() {
+            if (windowPosition) {
+                logo.attr('src', 'img/logo-SP.svg')
+            } else {
+                logo.attr('src', 'img/logo-SP-branco.svg')
+            }
+        })
     });
 })
 
